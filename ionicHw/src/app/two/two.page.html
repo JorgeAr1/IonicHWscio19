@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button defaultHref="home" text="Back"></ion-back-button>
+    <ion-title>Two</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-input placeholder="Enter Title"></ion-input>
+  <ion-input placeholder="Enter content"></ion-input>
+  <ion-list>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Poster</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Jorge</ion-label>
+        <ion-radio slot="start" value="biff" checked></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Luis</ion-label>
+        <ion-radio slot="start" value="griff"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Arreygue</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="f">Female</ion-select-option>
+      <ion-select-option value="m">Male</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-label>Add link for more infomration</ion-label>
+  <ion-toggle color="danger"></ion-toggle>
+  <br>
+  <br>
+  <ion-label>a check box</ion-label>
+  <ion-checkbox color="dark"></ion-checkbox>
+  <br>
+  <br>
+  <ion-label>Date to post, Click here</ion-label>
+  <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+  <br>
+</ion-content>
