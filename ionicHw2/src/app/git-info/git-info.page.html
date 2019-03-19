@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-back-button defaultHref="home" text="Back"></ion-back-button>
+    <ion-title>gitInfo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngIf='userData'>
+      <ion-card-header>
+        <ion-card-subtitle>{{userData.bio}}</ion-card-subtitle>
+        <ion-card-title>{{userData.name}}</ion-card-title>
+      </ion-card-header> 
+      <ion-img [src]="userData.avatar_url"></ion-img>
+    </ion-card>
+</ion-content>

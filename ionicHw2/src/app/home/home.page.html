@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+      <ion-input  placeholder="Enter github username" [(ngModel)]="nombre"></ion-input>
+      <ion-button expand="block"  (click)="search()">Search</ion-button>
+      <ion-fab-button (click)="toggleLight()" color="light">Light</ion-fab-button>
+  </div>
+  
+</ion-content>
